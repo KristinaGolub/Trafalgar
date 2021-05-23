@@ -13,13 +13,22 @@ menuBurger.addEventListener('click', () => {
 let menuClose = document.getElementById('menu-close');
 
 menuClose.addEventListener('click', () => {
+   closeBurgerMenu();
+});
+
+function closeBurgerMenu() {
     let menu = document.getElementById('menu');
     menu.classList.add('hidden');
     menu.classList.remove('active');
 
     menuClose.classList.add('d-none');
     menuBurger.classList.remove('d-none');
-});
+}
+
+let linkBurger = document.querySelectorAll('.nav-burger a');
+for (let link of linkBurger)
+link.addEventListener('click', () => { closeBurgerMenu()});
+
 
 
 let linkModal = document.getElementById('linkModal');
