@@ -7,6 +7,9 @@ menuBurger.addEventListener('click', () => {
 
     menuClose.classList.remove('d-none');
     menuBurger.classList.add('d-none');
+
+    let headerFixed = document.querySelector('header');
+    headerFixed.style.position = "absolute";
 });
 
 
@@ -23,6 +26,9 @@ function closeBurgerMenu() {
 
     menuClose.classList.add('d-none');
     menuBurger.classList.remove('d-none');
+
+    let headerFixed = document.querySelector('header');
+    headerFixed.style.position = "fixed";
 }
 
 let linkBurger = document.querySelectorAll('.nav-burger a');
@@ -31,11 +37,14 @@ link.addEventListener('click', () => { closeBurgerMenu()});
 
 
 
-let linkModal = document.getElementById('linkModal');
+let linkModal = document.getElementById('link-modal');
 
 linkModal.addEventListener('click', () => {
     let modalWindow = document.getElementById('modal-window');
     modalWindow.classList.remove('d-none');
+
+    let headerFixed = document.querySelector('header');
+    headerFixed.style.position = "absolute";
 });
 
 
@@ -44,6 +53,9 @@ let modalClose = document.getElementById('modal-close');
 modalClose.addEventListener('click', () => {
     let modalWindow = document.getElementById('modal-window');
     modalWindow.classList.add('d-none');
+
+    let headerFixed = document.querySelector('header');
+    headerFixed.style.position = "fixed";
 });
 
 
