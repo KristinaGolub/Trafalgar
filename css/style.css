@@ -145,6 +145,16 @@ header {
     padding-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+    .container {
+        position: relative;
+    }
+    header {
+        position: fixed;
+        width: 100%;
+    }
+}
+
 .header-menu-link {
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
@@ -160,7 +170,7 @@ header {
 
 .header-burger {
     position: relative;
-    margin-right: 0 !important;
+    margin-right: 1em !important;
     width: 30px;
     height: 20px;
     border: none;
@@ -257,10 +267,6 @@ header {
 .home {
     margin-top: 8rem;
     margin-bottom: 10em;
-}
-
-.home-article {
-    height: 340px;
 }
 
 .home-article p {
