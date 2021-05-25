@@ -278,8 +278,14 @@ header {
 
 .home-article h1 {
     font-family: 'Mulish', sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .home-article h1 {
+        font-size: 2.5rem;
+    }
 }
 
 .btn-home {
@@ -317,8 +323,14 @@ header {
 .our-services h2 {
     margin-bottom: 60px;
     font-family: 'Mulish', sans-serif;
-    font-size: 36px;
+    font-size: 2.5em;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .our-services h2 {
+        font-size: 2rem;
+    }
 }
 
 .our-services .description {
@@ -378,9 +390,15 @@ header {
 }
 
 .apps h2 {
-    font-size: 36px;
+    font-size: 2.5em;
     line-height: 150%;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .apps h2 {
+        font-size: 2rem;
+    }
 }
 
 .apps p {
@@ -429,6 +447,16 @@ h5 {
     line-height: 150%;
 }
 
+.testimonials h2 {
+    font-size: 2.5em;
+}
+
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+}
+
 .testimonials p {
     font-size: 19px;
     color: #ffffff;
@@ -472,8 +500,14 @@ h3 {
 }
 
 .about-us h2 {
-    font-size: 36px;
+    font-size: 2.5em;
     margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 2rem;
+    }
 }
 
 .about-us p {
