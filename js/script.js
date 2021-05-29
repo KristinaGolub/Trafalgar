@@ -37,6 +37,58 @@ link.addEventListener('click', () => { closeBurgerMenu()});
 
 
 
+//
+let header = document.querySelector("header");
+// Анимация перехода по разделам при скроллинге (начало)
+let sectionHome = document.getElementById("home");
+let sectionServices = document.getElementById("our-services");
+let sectionApps = document.getElementById("apps");
+let sectionTestimonials = document.getElementById("testimonials");
+let sectionAbout = document.getElementById("about-us");
+
+
+let linkHome = document.querySelector("[href='#home']");
+let linkServices = document.querySelector("[href='#our-services']");
+let linkApps = document.querySelector("[href='#apps']");
+let linkTestimonials = document.querySelector("[href='#testimonials']");
+let linkAbout = document.querySelector("[href='#about-us']");
+
+
+
+
+linkHome.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+});
+
+linkServices.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, sectionServices.offsetTop - header.offsetHeight);
+});
+
+linkApps.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, sectionApps.offsetTop - header.offsetHeight);
+});
+
+linkTestimonials.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(
+        0, sectionTestimonials.offsetTop - header.offsetHeight);
+});
+
+linkAbout.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(
+        0, sectionAbout.offsetTop - header.offsetHeight);
+});
+
+// Анимация перехода по разделам при скроллинге (конец)
+
+
+
+
+
 let linkModal = document.getElementById('link-modal');
 
 linkModal.addEventListener('click', () => {
